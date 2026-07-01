@@ -1,0 +1,52 @@
+{
+  "name": "taxikiwi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo Taxi Kiwi - API NestJS + Backoffice Next.js",
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
+  "engines": {
+    "node": ">=24.13.0",
+    "pnpm": ">=10.31.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "format": "turbo run format",
+    "format:check": "prettier --check .",
+    "api:migration:create": "pnpm --filter api migration:create",
+    "api:migration:generate": "pnpm --filter api migration:generate",
+    "api:migration:revert": "pnpm --filter api migration:revert",
+    "api:migration:run": "pnpm --filter api migration:run",
+    "api:migration:show": "pnpm --filter api migration:show",
+    "api:schema:log": "pnpm --filter api schema:log",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{json,md,mdx,yml,yaml,css,scss,html}": "prettier --write --ignore-unknown",
+    "apps/api/**/*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "prettier --write --ignore-unknown",
+      "pnpm --dir apps/api exec eslint --fix --no-warn-ignored"
+    ],
+    "apps/admin/**/*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "prettier --write --ignore-unknown",
+      "pnpm --dir apps/admin exec eslint --fix --no-warn-ignored"
+    ],
+    "packages/**/*.{js,jsx,ts,tsx,mjs,cjs}": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.8.0",
+    "@commitlint/config-conventional": "19.8.0",
+    "eslint": "9.21.0",
+    "husky": "9.1.7",
+    "lint-staged": "15.5.0",
+    "prettier": "3.5.3",
+    "turbo": "2.9.6",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.26.1"
+  }
+}

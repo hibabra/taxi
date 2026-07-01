@@ -1,0 +1,39 @@
+<html lang='fr'>
+  <body style='margin: 0; background: #f8fafc; font-family: Arial, sans-serif; color: #111827'>
+    <table role='presentation' width='100%' cellspacing='0' cellpadding='0' style='padding: 32px 16px'>
+      <tr>
+        <td align='center'>
+          <table
+            role='presentation'
+            width='100%'
+            cellspacing='0'
+            cellpadding='0'
+            style='max-width: 560px; border-radius: 12px; background: #ffffff; padding: 32px; border: 1px solid #e5e7eb'
+          >
+            <tr>
+              <td>
+                <h1 style='margin: 0 0 16px; font-size: 22px; color: #166534'>Bienvenue sur TaxiKiwi</h1>
+                <p style='margin: 0 0 14px; line-height: 1.6'>Bonjour {{firstName}},</p>
+                <p style='margin: 0 0 22px; line-height: 1.6'>
+                  Vous avez ete invite a rejoindre le backoffice TaxiKiwi comme {{roles}}.
+                </p>
+                <p style='margin: 0 0 24px'>
+                  <a
+                    href='{{acceptUrl}}'
+                    style='display: inline-block; border-radius: 8px; background: #166534; color: #ffffff; font-weight: 700; padding: 12px 18px; text-decoration: none'
+                  >
+                    Continuer et creer mon compte
+                  </a>
+                </p>
+                <p style='margin: 0 0 14px; color: #4b5563; font-size: 14px; line-height: 1.6'>
+                  Ce lien expire le {{expiresAt}} et ne peut etre utilise qu'une seule fois.
+                </p>
+                <p style='margin: 24px 0 0; color: #4b5563; font-size: 14px'>L'equipe TaxiKiwi</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

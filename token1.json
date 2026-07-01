@@ -1,0 +1,15 @@
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFobWVkLnQwMDAwMDFAc3RjLTAwMS5sb2NhbCIsImZhbWlseUlkIjoiOWJhMDliNDMtNWJiMC00MmQxLWI3YjYtOGM3MDM4MTRmYzgzIiwiZHJpdmVySWQiOiIxMmMwZTA5Yy1jOWM0LTRmYWQtYTk1MC00Mjg3MDE1ZjgyNGYiLCJkcml2ZXJJZGVudGlmaWVyIjoiVDAwMDAwMSIsImdyb3VwZW1lbnRJZCI6IjM2ZWYzY2I5LTZkOWItNGMxZC1hYTA0LTQyMmM0MjJiNTJkNyIsImdyb3VwZW1lbnROYW1lIjoiU3RhdGlvbiBDZW50cmUiLCJpc0dyb3VwQWRtaW4iOnRydWUsInJvbGVzIjpbIkFETUlOIiwiRFJJVkVSIl0sInNlc3Npb25JZCI6IjA5NzI0NGVlLWEwNjEtNGQ1MS1iYmY1LWU4NWU0YmJkMmU0MSIsInN1YiI6ImEwMzY1MDNhLTAzZDQtNGZmZS05NDNlLWM0OWVkN2ZlYjE2MSIsInR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3ODA1OTc1ODYsImV4cCI6MTc4MDU5ODQ4Nn0.oqJDRsltqMEFzP6NtdDIANOPJuXUWPGQxMNA5TfHm_M",
+  "expiresIn": 900,
+  "tokenType": "Bearer",
+  "user": {
+    "email": "ahmed.t000001@stc-001.local",
+    "groupementId": "36ef3cb9-6d9b-4c1d-aa04-422c422b52d7",
+    "groupementName": "Station Centre",
+    "id": "a036503a-03d4-4ffe-943e-c49ed7feb161",
+    "roles": ["ADMIN", "DRIVER"],
+    "driverId": "12c0e09c-c9c4-4fad-a950-4287015f824f",
+    "driverIdentifier": "T000001",
+    "isGroupAdmin": true
+  }
+}

@@ -1,0 +1,47 @@
+<html lang='fr'>
+  <body style='margin: 0; background: #f8fafc; font-family: Arial, sans-serif; color: #111827'>
+    <table role='presentation' width='100%' cellspacing='0' cellpadding='0' style='padding: 32px 16px'>
+      <tr>
+        <td align='center'>
+          <table
+            role='presentation'
+            width='100%'
+            cellspacing='0'
+            cellpadding='0'
+            style='max-width: 560px; border-radius: 12px; background: #ffffff; padding: 32px; border: 1px solid #e5e7eb'
+          >
+            <tr>
+              <td>
+                <h1 style='margin: 0 0 16px; font-size: 22px; color: #166534'>Invitation TaxiKiwi</h1>
+                <p style='margin: 0 0 14px; line-height: 1.6'>
+                  Vous avez ete invite a rejoindre TaxiKiwi comme chauffeur.
+                </p>
+                <table role='presentation' cellspacing='0' cellpadding='0' style='margin: 0 0 22px; color: #374151'>
+                  <tr>
+                    <td style='padding: 4px 16px 4px 0'>Ville de licence</td>
+                    <td style='padding: 4px 0; font-weight: 700'>{{licenseCity}}</td>
+                  </tr>
+                  <tr>
+                    <td style='padding: 4px 16px 4px 0'>Numero de licence</td>
+                    <td style='padding: 4px 0; font-weight: 700'>{{licenseNumber}}</td>
+                  </tr>
+                </table>
+                <p style='margin: 0 0 24px'>
+                  <a
+                    href='{{acceptUrl}}'
+                    style='display: inline-block; border-radius: 8px; background: #166534; color: #ffffff; font-weight: 700; padding: 12px 18px; text-decoration: none'
+                  >
+                    Continuer et creer mon compte
+                  </a>
+                </p>
+                <p style='margin: 0; color: #4b5563; font-size: 14px; line-height: 1.6'>
+                  Ce lien expire le {{expiresAt}} et ne peut etre utilise qu'une seule fois.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
